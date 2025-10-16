@@ -1,0 +1,83 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "fault_1",
+        "name": "Sesar (indikatif)",
+        "type": "fault"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            138.75,
+            -2.8
+          ],
+          [
+            139.15,
+            -2.2
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "river_1",
+        "name": "Sungai Muara Tor",
+        "type": "river"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            139.02,
+            -2.6
+          ],
+          [
+            139.04,
+            -2.45
+          ],
+          [
+            139.06,
+            -2.35
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sample_muara",
+        "name": "Sample Alluvial Muara Tor",
+        "type": "sample",
+        "notes": "indikatif"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.05,
+          -2.45
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sample_bonggo",
+        "name": "Sample Bonggo",
+        "type": "sample",
+        "notes": "indikatif"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.95,
+          -2.56
+        ]
+      }
+    }
+  ]
+}

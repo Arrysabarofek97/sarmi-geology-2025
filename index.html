@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sarmi Geology – Jejak Magma Purba dan Potensi Emas Papua</title>
+  <meta name="description" content="Peta Kronologi Geologi Sarmi — Visual interaktif berbasis data publik (BMKG/USGS/OSM) tentang magma purba, mineralisasi, endapan aluvial, dan aktivitas gempa." />
+  <meta name="author" content="Arry Stanford — Ruang Bercakap Papua" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+</head>
+<body class="light">
+  <header class="topbar">
+    <div class="container">
+      <h1>Sarmi Geology — Jejak Magma Purba & Potensi Emas Papua</h1>
+      <div class="controls">
+        <button id="toggleTheme" title="Mode gelap/terang">🌙</button>
+        <div id="shareButtons" class="share">
+          <button id="shareWhats">WhatsApp</button>
+          <button id="shareX">X/Twitter</button>
+          <button id="shareFB">Facebook</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container main-grid">
+    <section id="map" class="card map"></section>
+
+    <aside class="card side">
+      <div id="timeline" class="timeline">
+        <h2>Timeline Geologi</h2>
+        <div id="stageTitle" class="stage-title">Magma Purba</div>
+        <div id="stageDesc" class="stage-desc">Memuat...</div>
+        <input id="stageRange" type="range" min="0" max="3" value="0" />
+      </div>
+
+      <div class="info">
+        <h3>Penjelasan Singkat</h3>
+        <p id="infoText">Memuat data publik... Pastikan terhubung internet untuk ambil data BMKG/USGS dan peta OSM.</p>
+        <h4>Sumber data</h4>
+        <ul>
+          <li>BMKG (lokal) — jika tersedia</li>
+          <li>USGS (global) — gempa real-time</li>
+          <li>OpenStreetMap — peta dasar</li>
+          <li>Pusat Survei Geologi (PSG), ESDM — peta geologi</li>
+        </ul>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <small>Dirancang oleh Arry Stanford — Data publik & interpretasi konseptual. Jangan gunakan untuk keputusan lapangan tanpa verifikasi.</small>
+      <div class="links">Unduh GeoJSON: <a href="data/sarmi.geojson" download>data/sarmi.geojson</a></div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
